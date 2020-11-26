@@ -1,0 +1,35 @@
+1.Inicio
+2. nombresJugador, x(200)[{1-9},{a-z},{A-Z}, {/}] <-- ""
+3. contador, i[0,n] <-- 0
+4. posicion, x(20)[{1-9},{a-z},{A-Z}, {/}] <-- ""
+5. edad, i[0,n] <-- 0
+6. num, i[0,n] <-- 0
+7. estatura, d[0,n] <-- 0
+8. promedioEdad, d [0,n] <-- 0
+9. promedioEstatura, d [0,n] <-- 0
+10. sumaEdad, i[0,n] <-- 0
+11. sumaEstatura, d [0,n] <-- 0
+12. cadenaFinal, x(200)[{1-9},{a-z},{A-Z}, {/}] <-- ""
+13. bandera, l <-- True
+14. Haga_Hasta
+15.     Escribir "Ingrese el nombre del jugador"
+16.     Leer nombresJugador
+17.     Escribir "Cual es la posicion que ocupa en el juego?
+18.     Leer posicion
+19.     Escribir "Ingrese su edad actual"
+20.     Leer edad
+21		Escribir "Ingrese su estatura actual"
+22.     Leer estatura
+23.     cadenaFinal <-- cadenaFinal + nombresJugador + "\t" + posicion + "\t" + "edad " +edad + "\t estatura " +estatura + "\t""\n"
+24.     sumaEdad <-- sumaEdad + edad
+25.		sumaEstatura <-- sumaEstatura + edad
+26.		contador <-- contador +1
+27.		Escribir "Escriba un numero mayor a 0 si ya no hay mas jugadores por ingresar"
+28.		Leer <--num
+29		Si num > 0 Entonces
+30.			bandera = False
+31. Fin Haga_Hasta (bandera)
+32. promedioEdad<-- sumaEdad/contador
+33. promedioEstatura <-- sumaEstatura/contador
+34. Escribir cadenaFinal +"Promedio de edades: " +promedioEdad +"\t Promedio de estaturas: " +promedioEstatura
+35. Fin

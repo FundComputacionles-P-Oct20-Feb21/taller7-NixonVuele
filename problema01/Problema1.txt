@@ -1,0 +1,26 @@
+1.  Inicio
+2.  numerador, i[0,n] <-- 1
+3.  cadenaFinal, x(200)[{1-9},{a-z},{A-Z}, {/}, {BS}]<-- ""
+4.  denominador, i[0,n] <-- 1
+5.  Mientras denominador <= 10 entonces
+6.       Si (denominador MOD 2) == 0 entonces
+7.	    	numerador <-- numerador + 2//-1+2=1
+8.          cadenaFinal <-- cadenaFinal + numerador + "/" +denominador +"  "
+9.       De lo contrario
+10.	    	numerador <-- numerador - 2//1-2=-1
+11.         cadenaFinal <-- cadenaFinal + numerador + "/" +denominador +"  "
+12.      Fin Si
+13.  denominador <--denominador + 1
+14.  Fin Mientras
+15.  Escribir "Secuencia: " +cadenaFinal
+16.  Fin
+
+//-1/1+1/2-1/3+1/4-1/5+1/6-1/7+1/8-1/9+1/10
+//-1=1
+//1=2
+//-1=3
+//1=4
+//-1=5
+//1=6
+//-1=7
+//1=8
